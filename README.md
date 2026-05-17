@@ -17,6 +17,8 @@ This is an ATX power control module for the JetKVM platform, built on the Raspbe
 
 This fix requires a hardware modification to work correctly. Pins 2 and 5 must be bridged. See `HW-Mod-Example.jpg`.
 
+![Hardware Modification Example](HW-Mod-Example.jpg)
+
 Without this modification, the board will handle power and reset commands but will not report LED status, which may be required for accurate device state monitoring.
 
 **PIO UART**: The firmware uses PIO-based UART (rather than hardware UART) to allow TX and RX to be assigned to non-default pins.
